@@ -1,0 +1,47 @@
+{
+  "name": "Telegram Music Bot",
+  "description": "🎵 A simple open-source Telegram bot to play music in group voice chats.",
+  "repository": "https://github.com/yourusername/telegram-music-bot",
+  "logo": "https://your-image-link.com/logo.png",
+  "keywords": ["telegram", "music", "bot", "python"],
+  "env": {
+    "API_ID": {
+      "description": "Get this from https://my.telegram.org"
+    },
+    "API_HASH": {
+      "description": "Get this from https://my.telegram.org"
+    },
+    "BOT_TOKEN": {
+      "description": "From @BotFather"
+    },
+    "SESSION_STRING": {
+      "description": "Generate using string session script"
+    },
+    "SUPPORT_CHANNEL": {
+      "description": "Link to your Telegram support channel"
+    },
+    "SUPPORT_GROUP": {
+      "description": "Link to your Telegram support group"
+    },
+    "LOG_CHANNEL_ID": {
+      "description": "Numeric Telegram channel ID where bot sends logs (e.g. -1001234567890)"
+    },
+    "APP_NAME": {
+      "description": "Your bot's name to show in /start and messages"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection URI (e.g., mongodb+srv://...)"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

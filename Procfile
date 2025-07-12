@@ -1,0 +1,3 @@
+worker: python -m bot
+
+
